@@ -22,9 +22,9 @@
             android:id="@+id/origin_layout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginLeft="@dimen/details_activity_label_margin_left"
+            android:layout_marginStart="@dimen/details_activity_label_margin_left"
+            android:layout_marginTop="@dimen/details_activity_label_margin_top"
             android:orientation="horizontal">
 
             <TextView
@@ -33,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/detail_place_of_origin_label"
                 android:textColor="@color/colorBlack"
-                android:textSize="16sp"
+                android:textSize="@dimen/details_activity_label_text_size"
                 android:textStyle="bold" />
 
             <TextView
@@ -41,7 +41,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/colorBlack"
-                android:textSize="16sp" />
+                android:textSize="@dimen/details_activity_label_text_size" />
 
         </LinearLayout>
 
@@ -49,9 +49,9 @@
             android:id="@+id/also_known_layout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginLeft="@dimen/details_activity_label_margin_left"
+            android:layout_marginStart="@dimen/details_activity_label_margin_left"
+            android:layout_marginTop="@dimen/details_activity_label_margin_top"
             android:orientation="horizontal">
 
             <TextView
@@ -60,7 +60,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/detail_also_known_as_label"
                 android:textColor="@color/colorBlack"
-                android:textSize="16sp"
+                android:textSize="@dimen/details_activity_label_text_size"
                 android:textStyle="bold" />
 
             <TextView
@@ -68,7 +68,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/colorBlack"
-                android:textSize="16sp" />
+                android:textSize="@dimen/details_activity_label_text_size" />
 
         </LinearLayout>
 
@@ -76,9 +76,9 @@
             android:id="@+id/ingredients_layout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginLeft="@dimen/details_activity_label_margin_left"
+            android:layout_marginStart="@dimen/details_activity_label_margin_left"
+            android:layout_marginTop="@dimen/details_activity_label_margin_top"
             android:orientation="horizontal">
 
             <TextView
@@ -87,7 +87,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/detail_ingredients_label"
                 android:textColor="@color/colorBlack"
-                android:textSize="16sp"
+                android:textSize="@dimen/details_activity_label_text_size"
                 android:textStyle="bold" />
 
             <TextView
@@ -95,7 +95,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/colorBlack"
-                android:textSize="16sp" />
+                android:textSize="@dimen/details_activity_label_text_size" />
 
         </LinearLayout>
 
@@ -103,9 +103,9 @@
             android:id="@+id/description_layout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginLeft="@dimen/details_activity_label_margin_left"
+            android:layout_marginStart="@dimen/details_activity_label_margin_left"
+            android:layout_marginTop="@dimen/details_activity_label_margin_top"
             android:orientation="horizontal">
 
             <TextView
@@ -114,7 +114,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/detail_description_label"
                 android:textColor="@color/colorBlack"
-                android:textSize="16sp"
+                android:textSize="@dimen/details_activity_label_text_size"
                 android:textStyle="bold" />
 
             <TextView
@@ -122,7 +122,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/colorBlack"
-                android:textSize="16sp" />
+                android:textSize="@dimen/details_activity_label_text_size" />
 
         </LinearLayout>
 
