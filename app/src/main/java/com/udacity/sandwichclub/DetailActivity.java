@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -19,6 +20,7 @@ public class DetailActivity extends AppCompatActivity {
     public static final String EXTRA_POSITION = "extra_position";
     private static final int DEFAULT_POSITION = -1;
     private TextView textViewPlaceOfOrigin, textViewAlsoKnownAs, textViewIngredients, textViewDescription;
+    private LinearLayout linearLayoutPlaceOfOrigin, linearLayoutAlsoKnownAs, linearLayoutIngredients, linearLayoutDescription;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,10 @@ public class DetailActivity extends AppCompatActivity {
         textViewAlsoKnownAs = findViewById(R.id.also_known_tv);
         textViewIngredients = findViewById(R.id.ingredients_tv);
         textViewDescription = findViewById(R.id.description_tv);
+        linearLayoutPlaceOfOrigin = findViewById(R.id.origin_layout);
+        linearLayoutAlsoKnownAs = findViewById(R.id.also_known_layout);
+        linearLayoutIngredients = findViewById(R.id.ingredients_layout);
+        linearLayoutIngredients = findViewById(R.id.ingredients_layout);
 
         Intent intent = getIntent();
         if (intent == null) {
@@ -73,29 +79,29 @@ public class DetailActivity extends AppCompatActivity {
         String description = sandwich.getDescription();
 
         if (placeOfOrigin.isEmpty() == true) {
-            textViewPlaceOfOrigin.setVisibility(View.GONE);
+            linearLayoutPlaceOfOrigin.setVisibility(View.GONE);
         } else {
-            textViewPlaceOfOrigin.append(" " + placeOfOrigin);
+            textViewPlaceOfOrigin.setText(" " + placeOfOrigin);
         }
 
         if (alsoKnownAs.size() == 0) {
-            textViewAlsoKnownAs.setVisibility(View.GONE);
+            linearLayoutAlsoKnownAs.setVisibility(View.GONE);
         } else {
-            textViewAlsoKnownAs.append(" ");
+            textViewAlsoKnownAs.setText(" ");
             textViewAlsoKnownAs.append(alsoKnownAs.toString(), 1, alsoKnownAs.toString().length() - 1);
         }
 
         if (ingredients.size() == 0) {
-            textViewIngredients.setVisibility(View.GONE);
+            linearLayoutIngredients.setVisibility(View.GONE);
         } else {
-            textViewIngredients.append(" ");
+            textViewIngredients.setText(" ");
             textViewIngredients.append(ingredients.toString(), 1, ingredients.toString().length() - 1);
         }
 
         if (description.isEmpty() == true) {
-            textViewDescription.setVisibility(View.GONE);
+            linearLayoutDescription.setVisibility(View.GONE);
         } else {
-            textViewDescription.append(" " + description);
+            textViewDescription.setText(" " + description);
         }
     }
 }
