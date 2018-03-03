@@ -78,7 +78,7 @@ public class DetailActivity extends AppCompatActivity {
         List<String> ingredients = sandwich.getIngredients();
         String description = sandwich.getDescription();
 
-        if (placeOfOrigin.isEmpty() == true) {
+        if (placeOfOrigin.isEmpty()) {
             linearLayoutPlaceOfOrigin.setVisibility(View.GONE);
         } else {
             textViewPlaceOfOrigin.setText(" " + placeOfOrigin);
@@ -98,7 +98,7 @@ public class DetailActivity extends AppCompatActivity {
             textViewIngredients.append(ingredients.toString(), 1, ingredients.toString().length() - 1);
         }
 
-        if (description.isEmpty() == true) {
+        if (description.isEmpty()) {
             linearLayoutDescription.setVisibility(View.GONE);
         } else {
             textViewDescription.setText(" " + description);
